@@ -24,7 +24,6 @@ export function CtaFinal() {
             <Reveal>
               <p className="eyebrow">
                 <span className="text-muted">09</span>
-                <span className="h-px w-6 bg-line" aria-hidden="true" />
                 Contato
               </p>
             </Reveal>

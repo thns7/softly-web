@@ -86,7 +86,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <Reveal>
               <p className="eyebrow">
                 {post.category}
-                <span className="h-px w-6 bg-line" aria-hidden="true" />
+                <span aria-hidden="true">·</span>
                 {post.readingTime} min de leitura
               </p>
             </Reveal>

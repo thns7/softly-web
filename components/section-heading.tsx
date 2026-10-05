@@ -44,7 +44,6 @@ export function SectionHeading({
             {index ? (
               <>
                 <span className="text-muted">{index}</span>
-                <span className="h-px w-6 bg-line" aria-hidden="true" />
               </>
             ) : null}
             {eyebrow}

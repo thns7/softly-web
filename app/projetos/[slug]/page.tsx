@@ -86,7 +86,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               <Reveal delay={0.05}>
                 <p className="eyebrow">
                   {project.category}
-                  <span className="h-px w-6 bg-line" aria-hidden="true" />
+                  <span aria-hidden="true">·</span>
                   {project.segment}
                 </p>
               </Reveal>
