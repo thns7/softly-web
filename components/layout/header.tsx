@@ -77,7 +77,7 @@ export function Header() {
           <Link
             href="/"
             className="relative z-10 -ml-1 rounded-pill p-1"
-            aria-label="Softly — página inicial"
+            aria-label="Softly, página inicial"
           >
             <Logo compact={scrolled} />
           </Link>

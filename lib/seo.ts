@@ -74,7 +74,7 @@ export function buildMetadata({
   publishedTime,
   noIndex = false,
 }: SeoInput = {}): Metadata {
-  const fullTitle = title ? `${title} · ${site.name}` : `${site.name} — ${site.tagline}`;
+  const fullTitle = title ? `${title} · ${site.name}` : `${site.name} · ${site.tagline}`;
   const ogImage =
     image ??
     `/api/og?title=${encodeURIComponent(ogTitle ?? title ?? site.name)}&subtitle=${encodeURIComponent(

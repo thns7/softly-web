@@ -110,7 +110,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
             <div>
               <p className="font-display text-display-sm text-title">Recebemos. Agora é com a gente.</p>
               <p className="mt-3 max-w-md text-body-sm text-body">
-                {site.contact.responseTime} Se preferir adiantar, chame no WhatsApp — a conversa já
+                {site.contact.responseTime} Se preferir adiantar, chame no WhatsApp: a conversa já
                 vai pré-preenchida com o que você escolheu.
               </p>
             </div>

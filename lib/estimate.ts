@@ -84,7 +84,7 @@ export function estimate(input: EstimateInput): EstimateResult {
     craft,
     chosenIntegrations,
     breakdown: [
-      { label: `${type.label} — escopo base`, value: type.base },
+      { label: `${type.label}, escopo base`, value: type.base },
       { label: `${extraUnits} ${type.unitLabel} além do mínimo`, value: unitsCost },
       { label: `${chosenIntegrations.length} integrações`, value: integrationsCost },
       {

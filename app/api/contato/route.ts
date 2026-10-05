@@ -55,12 +55,12 @@ export async function POST(request: Request) {
   const lead = {
     nome: data.name,
     whatsapp: data.phone,
-    email: data.email || '—',
+    email: data.email || 'não informado',
     tipoDeProjeto: data.projectType,
-    mensagem: data.message || '—',
+    mensagem: data.message || 'não informado',
     estimativa: data.estimate
       ? `R$ ${data.estimate.total.toLocaleString('pt-BR')} · ~${data.estimate.weeks} semanas · ${data.estimate.summary}`
-      : '—',
+      : 'não informado',
     origem: data.source ?? 'site',
     recebidoEm: new Date().toISOString(),
   };
@@ -89,7 +89,7 @@ export async function POST(request: Request) {
           from: process.env.CONTACT_FROM_EMAIL ?? 'Softly <site@softly.com.br>',
           to: [to],
           reply_to: data.email || undefined,
-          subject: `Novo lead do site — ${data.name} (${data.projectType})`,
+          subject: `Novo lead do site: ${data.name} (${data.projectType})`,
           text: Object.entries(lead)
             .map(([key, value]) => `${key}: ${value}`)
             .join('\n'),

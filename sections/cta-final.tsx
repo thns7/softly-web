@@ -48,7 +48,7 @@ export function CtaFinal() {
             <Reveal delay={0.12}>
               <p className="mt-6 max-w-md text-lead text-body">
                 Preencha quatro campos. Em até um dia útil você recebe um diagnóstico inicial, a
-                faixa de investimento e o prazo — sem reunião obrigatória para saber o preço.
+                faixa de investimento e o prazo, sem reunião obrigatória para saber o preço.
               </p>
             </Reveal>
 

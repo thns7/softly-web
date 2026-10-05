@@ -46,7 +46,7 @@ export function ProjectFrame({
       >
         <Image
           src={project.image}
-          alt={`Interface do projeto ${project.client} — ${project.category}`}
+          alt={`Interface do projeto ${project.client}, ${project.category}`}
           fill
           sizes={sizes}
           className="object-cover"
@@ -64,7 +64,7 @@ export function ProjectFrame({
         className,
       )}
       role="img"
-      aria-label={`Mockup do projeto ${project.client} — ${project.category}`}
+      aria-label={`Mockup do projeto ${project.client}, ${project.category}`}
     >
       {/* luz de fundo */}
       <div

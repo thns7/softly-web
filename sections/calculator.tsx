@@ -220,7 +220,7 @@ export function Calculator() {
               </p>
 
               <p className="mt-3 font-mono text-body-sm text-muted" aria-live="polite">
-                Faixa provável: R$ <AnimatedNumber value={result.min} /> — R${' '}
+                Faixa provável: R$ <AnimatedNumber value={result.min} /> a R${' '}
                 <AnimatedNumber value={result.max} />
               </p>
 

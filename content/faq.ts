@@ -5,7 +5,7 @@ export const faq: FaqItem[] = [
   {
     question: 'Quanto tempo leva para o meu projeto ficar pronto?',
     answer:
-      'Uma landing page fica pronta em 3 a 4 semanas. Um site institucional, em 4 a 6. Aplicativos e sistemas variam de 8 a 16 semanas, dependendo do escopo. O prazo é fechado na proposta e vira cronograma com marcos — você acompanha entrega parcial toda semana, em ambiente de testes.',
+      'Uma landing page fica pronta em 3 a 4 semanas. Um site institucional, em 4 a 6. Aplicativos e sistemas variam de 8 a 16 semanas, dependendo do escopo. O prazo é fechado na proposta e vira cronograma com marcos: você acompanha entrega parcial toda semana, em ambiente de testes.',
   },
   {
     question: 'Como funciona o pagamento?',
@@ -15,7 +15,7 @@ export const faq: FaqItem[] = [
   {
     question: 'O que acontece depois que o site entra no ar?',
     answer:
-      'Você recebe treinamento gravado do painel, a documentação do projeto e 30 dias de ajustes inclusos. No plano Growth, seguimos otimizando todo mês. Nos demais, você pode contratar manutenção avulsa ou tocar sozinho — o projeto é seu e funciona sem nós.',
+      'Você recebe treinamento gravado do painel, a documentação do projeto e 30 dias de ajustes inclusos. No plano Growth, seguimos otimizando todo mês. Nos demais, você pode contratar manutenção avulsa ou tocar sozinho. O projeto é seu e funciona sem nós.',
   },
   {
     question: 'Vocês fazem manutenção depois da entrega?',
@@ -30,12 +30,12 @@ export const faq: FaqItem[] = [
   {
     question: 'Quem paga a hospedagem e os domínios?',
     answer:
-      'A hospedagem fica em contas no seu nome, pagas por você — normalmente entre R$ 0 e R$ 120 por mês para sites, porque usamos infraestrutura com plano gratuito generoso. Nos planos com hospedagem inclusa, isso já está no valor mensal. Domínio custa cerca de R$ 40 por ano no registro.br.',
+      'A hospedagem fica em contas no seu nome, pagas por você, normalmente entre R$ 0 e R$ 120 por mês para sites, porque usamos infraestrutura com plano gratuito generoso. Nos planos com hospedagem inclusa, isso já está no valor mensal. Domínio custa cerca de R$ 40 por ano no registro.br.',
   },
   {
     question: 'E se o escopo mudar no meio do projeto?',
     answer:
-      'Mudança pequena entra sem custo. Mudança que altera prazo ou esforço vira um aditivo curto, com valor e impacto no cronograma, aprovado por você antes de qualquer linha de código. Nunca há surpresa na fatura final — se não foi aprovado, não foi cobrado.',
+      'Mudança pequena entra sem custo. Mudança que altera prazo ou esforço vira um aditivo curto, com valor e impacto no cronograma, aprovado por você antes de qualquer linha de código. Nunca há surpresa na fatura final: se não foi aprovado, não foi cobrado.',
   },
   {
     question: 'Como funciona o suporte no dia a dia?',

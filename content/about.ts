@@ -3,7 +3,7 @@ export const about = {
   eyebrow: 'Sobre a Softly',
   title: 'Somos engenharia de produto, não fábrica de site.',
   paragraphs: [
-    'A Softly nasceu em 2025 com uma pergunta incômoda: por que empresa boa aceita software ruim? A resposta quase sempre era a mesma — porque contratou pelo preço da hora, não pelo resultado da entrega.',
+    'A Softly nasceu em 2025 com uma pergunta incômoda: por que empresa boa aceita software ruim? A resposta quase sempre era a mesma: porque contratou pelo preço da hora, não pelo resultado da entrega.',
     'Somos dois engenheiros de software em São Paulo, e é isso mesmo: não terceirizamos desenvolvimento e não colocamos estagiário para tocar projeto de cliente. Quem vende é quem constrói.',
   ],
   /* Dois valores, não quatro. "Entrega semanal" e "fala direta" já estavam

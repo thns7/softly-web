@@ -19,7 +19,7 @@ export const processSteps: ProcessStep[] = [
     title: 'Diagnóstico',
     duration: '3 a 5 dias',
     description:
-      'Conversa de uma hora, análise do que você já tem e leitura dos números. Saímos com o problema definido — não com uma lista de desejos.',
+      'Conversa de uma hora, análise do que você já tem e leitura dos números. Saímos com o problema definido, não com uma lista de desejos.',
   },
   {
     number: '02',

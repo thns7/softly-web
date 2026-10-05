@@ -125,4 +125,4 @@ export const craftLevels: MultiplierOption[] = [
 ];
 
 export const calculatorDisclaimer =
-  'Esta é uma estimativa automática, não uma proposta. O valor final depende do escopo fechado no diagnóstico — que é gratuito e sem compromisso.';
+  'Esta é uma estimativa automática, não uma proposta. O valor final depende do escopo fechado no diagnóstico, que é gratuito e sem compromisso.';

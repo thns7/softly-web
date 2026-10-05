@@ -92,11 +92,11 @@ export const privacyPolicy: LegalSection[] = [
       {
         type: 'list',
         items: [
-          'Vercel Inc. — hospedagem do site (Estados Unidos).',
-          'Google LLC — Google Analytics 4, em modo de IP anonimizado (Estados Unidos).',
-          'Meta Platforms Inc. — mensuração de campanhas, quando autorizada (Estados Unidos).',
-          'Provedor de e-mail transacional — envio das mensagens do formulário.',
-          'Meta / WhatsApp — quando você opta por continuar a conversa por WhatsApp.',
+          'Vercel Inc.: hospedagem do site (Estados Unidos).',
+          'Google LLC: Google Analytics 4, em modo de IP anonimizado (Estados Unidos).',
+          'Meta Platforms Inc.: mensuração de campanhas, quando autorizada (Estados Unidos).',
+          'Provedor de e-mail transacional: envio das mensagens do formulário.',
+          'Meta / WhatsApp: quando você opta por continuar a conversa por WhatsApp.',
         ],
       },
       {

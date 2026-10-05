@@ -227,7 +227,7 @@ function PanelRow({
         aria-valuenow={Math.round(row.mark * 100)}
         aria-valuemin={0}
         aria-valuemax={100}
-        aria-label={`${row.label} — ${row.scale}`}
+        aria-label={`${row.label}: ${row.scale}`}
         className="relative mt-2.5 h-1 w-full rounded-pill bg-line/60"
       >
         <motion.div

@@ -205,7 +205,7 @@ function ProjectCard({
               className="after:absolute after:inset-0 after:content-[''] hover:text-brand-soft"
             >
               {project.client}
-              <span className="sr-only"> — abrir o projeto no ar, em nova aba</span>
+              <span className="sr-only">: abrir o projeto no ar, em nova aba</span>
             </a>
           ) : (
             <Link

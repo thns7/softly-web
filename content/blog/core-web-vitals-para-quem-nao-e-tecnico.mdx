@@ -8,9 +8,9 @@ author: "Vinícius Herreira"
 featured: false
 ---
 
-Se alguém já te mandou um relatório com "LCP", "CLS" e "INP" em vermelho, aqui vai a tradução — e o que fazer com cada um.
+Se alguém já te mandou um relatório com "LCP", "CLS" e "INP" em vermelho, aqui vai a tradução e o que fazer com cada um.
 
-## LCP — quanto demora para aparecer o que importa
+## LCP: quanto demora para aparecer o que importa
 
 **Largest Contentful Paint** mede em quanto tempo o maior elemento visível (normalmente a imagem ou o título do topo) termina de carregar.
 
@@ -19,7 +19,7 @@ Se alguém já te mandou um relatório com "LCP", "CLS" e "INP" em vermelho, aqu
 
 Culpados frequentes: imagem gigante sem compressão, fonte que bloqueia a renderização, e servidor lento. Comprimir a imagem principal costuma resolver metade do problema em uma tarde.
 
-## CLS — quanto a página "pula" enquanto carrega
+## CLS: quanto a página "pula" enquanto carrega
 
 **Cumulative Layout Shift** mede o deslocamento inesperado do conteúdo. É aquele momento em que você vai clicar num botão, um banner carrega acima e você clica em outra coisa.
 
@@ -27,7 +27,7 @@ Culpados frequentes: imagem gigante sem compressão, fonte que bloqueia a render
 
 A correção quase sempre é reservar espaço: declarar largura e altura de imagem, e nunca injetar banner acima de conteúdo já renderizado.
 
-## INP — quanto demora para o site responder ao seu clique
+## INP: quanto demora para o site responder ao seu clique
 
 **Interaction to Next Paint** substituiu o antigo FID. Mede o tempo entre o seu clique e a resposta visível da página.
 
@@ -42,5 +42,5 @@ Os três são fator de ranqueamento no Google desde 2021, mas o efeito direto é
 ## Como medir hoje, de graça
 
 1. Abra o [PageSpeed Insights](https://pagespeed.web.dev) e cole o endereço do seu site.
-2. Olhe **apenas** a aba de celular — é de onde vem a maior parte do seu tráfego.
+2. Olhe **apenas** a aba de celular, que é de onde vem a maior parte do seu tráfego.
 3. Anote os três números. Se estiverem verdes, ótimo, o problema é outro. Se estiverem vermelhos, você acabou de achar dinheiro no chão.

@@ -23,7 +23,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   if (!project) return buildMetadata({ title: 'Projeto não encontrado', noIndex: true });
 
   return buildMetadata({
-    title: `${project.client} — ${project.headlineResult}`,
+    title: `${project.client}: ${project.headlineResult}`,
     description: project.summary,
     path: `/projetos/${project.slug}`,
     ogTitle: project.client,

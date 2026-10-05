@@ -35,7 +35,7 @@ export default function NotFound() {
               animate={{ opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE_EXPO, delay: 0.3 } }}
               className="mt-6 max-w-lg text-lead text-body"
             >
-              O endereço não existe mais — ou nunca existiu. Acontece. Volte para o início ou vá
+              O endereço não existe mais, ou nunca existiu. Acontece. Volte para o início ou vá
               direto para o que você procurava.
             </motion.p>
 
