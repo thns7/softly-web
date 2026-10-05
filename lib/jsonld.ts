@@ -23,7 +23,6 @@ export const organizationSchema = () => ({
   foundingDate: String(site.foundedYear),
   email: site.contact.email,
   telephone: `+${site.contact.whatsappNumber}`,
-  taxID: site.contact.cnpj,
   address: {
     '@type': 'PostalAddress',
     streetAddress: site.contact.address,

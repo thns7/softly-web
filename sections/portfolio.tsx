@@ -154,9 +154,10 @@ export function Portfolio() {
  * repetidos — e evita âncora dentro de âncora, que é HTML inválido.
  * O link do case fica acima desse `::after` com `relative z-10`.
  *
- * Tudo que antes só aparecia no hover (segmento, resumo, stack) agora está
- * sempre na página: sem cursor customizado não há nada sinalizando que existe
- * conteúdo escondido, e no toque o hover nunca acontecia.
+ * O card só identifica: imagem, categoria · ano e o nome do cliente. Título,
+ * resumo, stack e resultado moram na página do case — o card é a capa, não o
+ * texto. Com cinco projetos empilhados, cada um com quatro blocos de texto, a
+ * seção virava leitura antes de virar vitrine.
  *
  * `wide` troca o empilhamento por duas colunas — imagem de um lado, texto do
  * outro — no card de abertura da grade.
@@ -190,19 +191,11 @@ function ProjectCard({
       </div>
 
       <div className={cn('flex flex-1 flex-col', wide ? 'p-6 lg:justify-center lg:p-10' : 'p-6')}>
-        <div className="flex items-center gap-3">
-          <span className="rounded-pill border border-line bg-surface/60 px-3 py-1.5 font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-muted">
-            {project.category}
-          </span>
-          <span className="font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-muted">
-            {project.year}
-          </span>
-        </div>
-        <p className="mt-3 font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-accent">
-          {project.segment}
+        <p className="font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-muted">
+          {project.category} · {project.year}
         </p>
 
-        <h3 className={cn('mt-4 text-title', wide ? 'text-display-md' : 'text-display-sm')}>
+        <h3 className={cn('mb-7 mt-3 text-title', wide ? 'text-display-md' : 'text-display-sm')}>
           {project.liveUrl ? (
             <a
               href={project.liveUrl}
@@ -225,33 +218,18 @@ function ProjectCard({
           )}
         </h3>
 
-        <p className="mt-3 text-lead text-body">{project.title}</p>
-        <p className="mt-3 max-w-prose text-body-sm text-muted">{project.summary}</p>
-
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {project.stack.map((tech) => (
-            <li
-              key={tech}
-              className="rounded-pill border border-line bg-surface/50 px-2.5 py-1 font-mono text-[0.6875rem] text-muted"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
-
-        <p className="mb-7 mt-6 font-mono text-[1.05rem] leading-snug text-brand-soft">
-          {project.headlineResult}
-        </p>
-
         {/* mt-auto cola o rodapé na base: os cards de uma mesma linha têm
             alturas de conteúdo diferentes e as duas ações ficam alinhadas. */}
         <div className="mt-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-3 border-t border-line/60 pt-5">
           {/* z-10: precisa ficar acima do ::after do título, senão o clique
-              aqui também abriria o site do projeto. */}
+              aqui também abriria o site do projeto.
+              É a única porta para a descrição do projeto, e em caixa-alta de
+              11px o link media 16px de altura: o ::before transparente leva a
+              área de toque a 44px sem mexer no traço. */}
           <Link
             href={caseHref}
             onClick={() => track('project_view', { slug: project.slug })}
-            className="relative z-10 inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-pill font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-muted transition-colors duration-300 ease-expo hover:text-title"
+            className="relative z-10 inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-pill font-mono text-[0.6875rem] uppercase tracking-[0.14em] text-muted transition-colors duration-300 ease-expo before:absolute before:-inset-x-2 before:-inset-y-3.5 before:content-[''] hover:text-title"
           >
             Ver o case
             <ArrowRight className="h-3.5 w-3.5" />

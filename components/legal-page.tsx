@@ -38,7 +38,7 @@ export function LegalPage({
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-6 font-mono text-label uppercase text-muted">
-              Atualizado em {formatDate(updatedAt)} · {site.legalName} · CNPJ {site.contact.cnpj}
+              Atualizado em {formatDate(updatedAt)} · {site.legalName}
             </p>
           </Reveal>
         </div>
@@ -48,7 +48,7 @@ export function LegalPage({
         <div className="divider-glow" />
 
         {/* min-w-0: item de grid tem min-width auto, entao um token longo do
-            texto legal (CNPJ, e-mail do encarregado) esticava a coluna e a
+            texto legal (o e-mail do encarregado, por exemplo) esticava a coluna e a
             pagina vazava 246px em 320px. */}
         <div className="mt-12 grid gap-12 lg:grid-cols-12">
           <nav aria-label="Índice do documento" className="min-w-0 lg:col-span-3">

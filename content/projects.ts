@@ -47,7 +47,7 @@ export type Project = {
   category: ProjectCategory;
   segment: string;
   year: number;
-  /** Frase curta e factual exibida no card do portfólio. */
+  /** Frase curta e factual: título e prévia de link da página do case. */
   headlineResult: string;
   summary: string;
   /** 'featured' ocupa duas colunas no grid assimétrico. */

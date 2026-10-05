@@ -17,9 +17,9 @@ export const site = {
   foundedYear: 2025,
 
   contact: {
-    // TODO: substituir por dado real — apenas dígitos, com DDI e DDD
-    whatsappNumber: '5548988440132',
-    whatsappLabel: '(48) 98844-0132',
+    // Apenas dígitos, com DDI e DDD — é o que o wa.me e o JSON-LD esperam.
+    whatsappNumber: '5511991926994',
+    whatsappLabel: '(11) 99192-6994',
     email: 'contato@softly.com.br', // TODO: substituir por dado real
     city: 'São Paulo',
     state: 'SP',
@@ -28,7 +28,6 @@ export const site = {
     // junto com "São Paulo/SP" — endereço incoerente é pior que nenhum.
     address: '',
     postalCode: '', // TODO: CEP real (o anterior, 88032-005, era de Florianópolis)
-    cnpj: '48.226.117/0001-30', // TODO: substituir por dado real
     hours: 'Seg a sex, 9h às 18h',
     responseTime: 'Respondemos em até 1 dia útil.',
   },

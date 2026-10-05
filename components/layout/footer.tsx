@@ -169,7 +169,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-4 py-8 text-body-sm text-muted md:flex-row md:items-center md:justify-between">
           <p className="font-mono text-[0.75rem]">
-            © {new Date().getFullYear()} {site.name} · CNPJ {site.contact.cnpj}
+            © {new Date().getFullYear()} {site.name}
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {legalNav.map((item) => (

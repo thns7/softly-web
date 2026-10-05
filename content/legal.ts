@@ -2,7 +2,7 @@
  * Textos legais (LGPD).
  * Redigidos para o modelo de operação descrito no site.
  * TODO: substituir por dado real — revisar com o jurídico antes de publicar e
- * conferir CNPJ, razão social, endereço e e-mail do encarregado (DPO).
+ * conferir razão social, endereço e e-mail do encarregado (DPO).
  */
 export type LegalBlock =
   | { type: 'paragraph'; text: string }
@@ -20,7 +20,7 @@ export const privacyPolicy: LegalSection[] = [
     blocks: [
       {
         type: 'paragraph',
-        text: 'A Softly Tecnologia Ltda., inscrita no CNPJ 48.226.117/0001-30, com sede em Florianópolis/SC, é a controladora dos dados pessoais coletados neste site, nos termos da Lei nº 13.709/2018 (LGPD).',
+        text: 'A Softly Tecnologia Ltda., com sede em São Paulo/SP, é a controladora dos dados pessoais coletados neste site, nos termos da Lei nº 13.709/2018 (LGPD).',
       },
       {
         type: 'paragraph',
