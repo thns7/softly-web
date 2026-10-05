@@ -20,7 +20,7 @@ export const site = {
     // Apenas dígitos, com DDI e DDD — é o que o wa.me e o JSON-LD esperam.
     whatsappNumber: '5511991926994',
     whatsappLabel: '(11) 99192-6994',
-    email: 'contato@softly.com.br', // TODO: substituir por dado real
+    email: 'softlytech01@gmail.com',
     city: 'São Paulo',
     state: 'SP',
     // TODO: endereço real em São Paulo. Ficou vazio de propósito: o valor

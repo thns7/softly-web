@@ -1,3 +1,5 @@
+import { site } from './site';
+
 /**
  * Textos legais (LGPD).
  * Redigidos para o modelo de operação descrito no site.
@@ -24,7 +26,7 @@ export const privacyPolicy: LegalSection[] = [
       },
       {
         type: 'paragraph',
-        text: 'Nosso encarregado de proteção de dados pode ser contatado pelo e-mail privacidade@softly.com.br. Respondemos solicitações em até 15 dias.',
+        text: `Nosso encarregado de proteção de dados pode ser contatado pelo e-mail ${site.contact.email}. Respondemos solicitações em até 15 dias.`,
       },
     ],
   },
@@ -139,7 +141,7 @@ export const privacyPolicy: LegalSection[] = [
       },
       {
         type: 'paragraph',
-        text: 'Para exercer qualquer um deles, escreva para privacidade@softly.com.br. Podemos pedir uma confirmação de identidade antes de atender ao pedido.',
+        text: `Para exercer qualquer um deles, escreva para ${site.contact.email}. Podemos pedir uma confirmação de identidade antes de atender ao pedido.`,
       },
     ],
   },
@@ -258,7 +260,7 @@ export const termsOfUse: LegalSection[] = [
       },
       {
         type: 'paragraph',
-        text: 'Dúvidas sobre este documento: contato@softly.com.br.',
+        text: `Dúvidas sobre este documento: ${site.contact.email}.`,
       },
     ],
   },
