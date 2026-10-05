@@ -200,7 +200,17 @@ const config: Config = {
         'border-spin': 'border-spin 5s linear infinite',
         float: 'float 7s cubic-bezier(0.65, 0, 0.35, 1) infinite',
         scan: 'scan 2.4s cubic-bezier(0.65, 0, 0.35, 1) 1 both',
-        'enter-up': 'enter-up 350ms cubic-bezier(0.16, 1, 0.3, 1) both',
+        /* `backwards`, NUNCA `both`. Esta animação envolve a PÁGINA INTEIRA
+           (components/motion/page-transition.tsx). Com `both` o último quadro,
+           `translate3d(0,0,0)`, fica aplicado para sempre — e qualquer
+           transform diferente de `none`, mesmo o identidade, faz o elemento
+           virar o bloco de referência de todo `position: fixed` lá dentro.
+           O pin do GSAP em "Como trabalhamos" usa `fixed`: em vez de grudar
+           na tela, a seção grudava no topo do documento, sumia durante o
+           trecho travado e voltava quando ele acabava. Com `backwards` o
+           elemento volta ao estilo natural quando a animação termina, e o
+           visual final é o mesmo porque o último quadro já era o natural. */
+        'enter-up': 'enter-up 350ms cubic-bezier(0.16, 1, 0.3, 1) backwards',
         'enter-card': 'enter-card 500ms cubic-bezier(0.16, 1, 0.3, 1) both',
         'draw-check': 'draw-check 600ms cubic-bezier(0.16, 1, 0.3, 1) 150ms both',
         'accordion-down': 'accordion-down 380ms cubic-bezier(0.16, 1, 0.3, 1)',

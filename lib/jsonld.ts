@@ -31,7 +31,7 @@ export const organizationSchema = () => ({
     postalCode: site.contact.postalCode,
     addressCountry: 'BR',
   },
-  sameAs: [site.social.instagram, site.social.linkedin, site.social.github],
+  sameAs: [site.social.instagram, site.social.github],
   numberOfEmployees: { '@type': 'QuantitativeValue', value: about.team.length },
 });
 

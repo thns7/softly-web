@@ -3,14 +3,13 @@
 import Link from 'next/link';
 import { useState, type FormEvent } from 'react';
 import { Logo } from '@/components/icons/logo';
-import { ArrowRight, Instagram, Linkedin, Mail, Pin, Whatsapp } from '@/components/icons/ui-icons';
+import { ArrowRight, Instagram, Mail, Pin, Whatsapp } from '@/components/icons/ui-icons';
 import { footerNav, legalNav, site, whatsappUrl } from '@/content/site';
 import { track } from '@/lib/analytics';
 import { cn } from '@/lib/utils';
 
 const socials = [
   { label: 'Instagram', href: site.social.instagram, Icon: Instagram },
-  { label: 'LinkedIn', href: site.social.linkedin, Icon: Linkedin },
   { label: 'WhatsApp', href: whatsappUrl(), Icon: Whatsapp },
 ];
 

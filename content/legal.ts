@@ -236,7 +236,7 @@ export const termsOfUse: LegalSection[] = [
     blocks: [
       {
         type: 'paragraph',
-        text: 'O site contém links para serviços de terceiros (WhatsApp, Instagram, LinkedIn, sites de clientes). Não controlamos esses ambientes e não respondemos por seu conteúdo ou por suas políticas de privacidade.',
+        text: 'O site contém links para serviços de terceiros (WhatsApp, Instagram, sites de clientes). Não controlamos esses ambientes e não respondemos por seu conteúdo ou por suas políticas de privacidade.',
       },
     ],
   },

@@ -33,8 +33,9 @@ export const site = {
   },
 
   social: {
-    instagram: 'https://instagram.com/softly.tech', // TODO: substituir por dado real
-    linkedin: 'https://linkedin.com/company/softly-tech', // TODO: substituir por dado real
+    instagram: 'https://instagram.com/softlytech',
+    // LinkedIn ainda não existe. Ao criar, volta aqui, no rodapé
+    // (components/layout/footer.tsx) e no `sameAs` de lib/jsonld.ts.
     github: 'https://github.com/softly-tech', // TODO: substituir por dado real
   },
 
