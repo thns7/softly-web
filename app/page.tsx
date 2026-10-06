@@ -4,7 +4,6 @@ import { DeliveryBand } from '@/sections/delivery-band';
 import { CtaFinal } from '@/sections/cta-final';
 import { Faq } from '@/sections/faq';
 import { Hero } from '@/sections/hero';
-import { KeyMetric } from '@/sections/key-metric';
 import { LogoMarquee } from '@/sections/logo-marquee';
 import { Portfolio } from '@/sections/portfolio';
 import { Pricing } from '@/sections/pricing';
@@ -40,7 +39,6 @@ export default function HomePage() {
       />
 
       <Hero />
-      <KeyMetric />
       <DeliveryBand />
       <LogoMarquee />
       <Services />

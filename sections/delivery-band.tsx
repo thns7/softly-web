@@ -9,10 +9,8 @@ import { DeliveryPanel } from '@/components/delivery-panel';
  * empilhadas numa coluna estreita.
  *
  * Também mudou de papel na página. No hero ele competia com o argumento;
- * logo depois da seção "O número" (sections/key-metric.tsx), ele responde a
- * ela: a frase diz que a gente descobre qual número precisa mudar, e a faixa
- * mostra os números que a Softly se compromete a entregar. Afirmação e
- * recibo, nessa ordem.
+ * aqui, logo depois dele, a faixa mostra os números que a Softly se
+ * compromete a entregar.
  */
 export function DeliveryBand() {
   return (
