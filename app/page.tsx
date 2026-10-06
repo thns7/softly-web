@@ -4,12 +4,12 @@ import { DeliveryBand } from '@/sections/delivery-band';
 import { CtaFinal } from '@/sections/cta-final';
 import { Faq } from '@/sections/faq';
 import { Hero } from '@/sections/hero';
+import { KeyMetric } from '@/sections/key-metric';
 import { LogoMarquee } from '@/sections/logo-marquee';
 import { Portfolio } from '@/sections/portfolio';
 import { Pricing } from '@/sections/pricing';
 import { Process } from '@/sections/process';
 import { Services } from '@/sections/services';
-import { Signal } from '@/sections/signal';
 import { Stats } from '@/sections/stats';
 import {
   faqSchema,
@@ -40,7 +40,7 @@ export default function HomePage() {
       />
 
       <Hero />
-      <Signal />
+      <KeyMetric />
       <DeliveryBand />
       <LogoMarquee />
       <Services />
